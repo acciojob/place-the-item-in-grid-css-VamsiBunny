@@ -1,2 +1,24 @@
 
-/* Your CSS Code here. */
+/* Your CSS Code here. *//* Style for the grid container */
+.holder {
+    /* Set the total size of the grid container */
+    width: 200px;
+    height: 200px;
+
+    /* Enable grid layout */
+    display: grid;
+
+    /* Define a 2x2 grid with equal-sized rows and columns */
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    
+    /* Optional: To visualize the grid container */
+    /* border: 1px solid black; */
+}
+
+/* Style for individual grid items */
+.item-1, .item-2, .item-3, .item-4 {
+    /* Each item will automatically fill a grid cell */
+    /* Optional: Add border to visualize items */
+    /* border: 1px solid gray; */
+}
